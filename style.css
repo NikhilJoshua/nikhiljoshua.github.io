@@ -89,3 +89,9 @@ h3 {
 	margin-bottom: 2rem;
 	scroll-margin-top: 1rem;
 }
+
+@media only screen and (max-width: 900px) {
+	.navigation {
+		display: none;
+	}
+}
