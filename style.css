@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	--nav-width: 150px;
+	--font-color-light: #595f7a;
+	--font-color-dark: #1b203d;
+	--hover-color: #e6e7f0;
+	scroll-behavior: smooth;
+	font-size: 16px;
+	color: var(--font-color-light);
+	font-family: inter;
+	line-height: 1.7;
+	background-color: #f5f7fb;
+	transition: all .3s;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.main-container {
+	margin: 0;
+	padding:0;
+}
+
+h1,h2,h3,h4 {
+	color: var(--font-color-dark);
+	font-weight: 600;
+	margin: .5rem 0;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+.navigation {
+	position: sticky;
+	top: 2rem;
+	display: inline-block;
+	vertical-align: top;
+	height: 100vh;
+}
+
+.navigation ul {
+	padding: 0;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: var(--body-color);
+	display: block;
+	font-size: .825rem;
+	padding: .5rem 1.5rem;
+}
+
+.navigation h2, .navigation > a {
+	margin: 0;
+	padding: 0;
+}
+
+.navigation li {
+	list-style: none;
+	transition: .3s;
+}
+
+.navigation li:hover {
+	background: var(--hover-color);
+	color: var(--font-color-dark)
+}
+
+.content {
+	display: inline-block;
+	width: 700px;
+	padding-bottom: 90vh;
+	padding-top: 1rem;
+	border-left: 1px solid var(--hover-color);
+	padding-left: 1rem;
+}
+
+.content > div[id] {
+	margin-bottom: 2rem;
+	scroll-margin-top: 1rem;
+}
