@@ -79,10 +79,9 @@ h3 {
 .content {
 	display: inline-block;
 	width: 700px;
+	padding: 1rem;
 	padding-bottom: 90vh;
-	padding-top: 1rem;
 	border-left: 1px solid var(--hover-color);
-	padding-left: 1rem;
 }
 
 .content > div[id] {
@@ -93,5 +92,9 @@ h3 {
 @media only screen and (max-width: 900px) {
 	.navigation {
 		display: none;
+	}
+
+	.content {
+		width: 100%;
 	}
 }
