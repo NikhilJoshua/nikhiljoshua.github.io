@@ -259,8 +259,11 @@ footer .social {
 	}
 
 	h1 {
-		font-size: 2.5rem;
-		line-height: 1.5;
+		font-size: 2rem;
+	}
+
+	.designation p {
+		font-size: 1rem;
 	}
 
 	.content {
