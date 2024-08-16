@@ -139,9 +139,14 @@ h3 {
 }
 
 .designation {
+	margin-bottom: 1rem;
+}
+
+.designation p {
 	margin: 0 0 1rem 0;
 	font-size: 1.5rem;
 	font-weight: 300;
+	line-height: 1;
 	color: var(--font-color-dark)
 }
 
