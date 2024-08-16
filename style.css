@@ -91,6 +91,7 @@ h3 {
 .navigation ul {
 	padding: 0;
 	display: block;
+	margin:.5rem 0;
 }
 
 .navigation a, footer a {
@@ -105,6 +106,11 @@ h3 {
 .navigation h2, .navigation > a {
 	margin: 0;
 	padding: 0;
+}
+
+.navigation a h3 {
+	font-size: 1.25rem;
+	margin: 0;
 }
 
 .navigation li {
@@ -126,8 +132,8 @@ h3 {
 	display: inline-block;
 	padding: var(--top-offset);
 	padding-left: 4rem;
+	padding-bottom: 30vh;
 	background: var(--white);
-	padding-bottom: 90vh;
 	border-left: 1px solid var(--hover-color);
 	width: 70%;
 }
@@ -191,10 +197,23 @@ footer .social {
 	transition: .3s;
 	font-weight: 500;
 	display: inline-block;
+	min-width: 14rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.button.secondary {
+	background: none;
+	color: var(--dark-blue);
+	border-width: 2px;
 }
 
 .button:hover {
 	background: var(--dark-blue);
+}
+
+.button.secondary:hover {
+	background: none;
 }
 
 .social ul {
@@ -205,6 +224,30 @@ footer .social {
 	gap: .5rem
 }
 
+#contact label {
+	display: block;
+	flex-direction: column;
+	font-size: .825rem;
+	margin-bottom: 1rem;
+	font-weight: 600;
+}
+
+#contact input {
+	padding: .5rem .5rem;
+	max-width: 18rem;
+	font-size: 1rem;
+	width: 90%;
+}
+
+#contact textarea {
+	padding: .25rem .5rem;
+	max-width: 40rem;
+	height: 10rem;
+	font-family: inter;
+	font-size: 1rem;
+	width: 100%;
+}
+
 .social li a {
 	font-size: 1.5rem;
 	color: var(--neutral-gray);
@@ -213,6 +256,11 @@ footer .social {
 @media only screen and (max-width: 900px) {
 	.navigation {
 		display: none;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		line-height: 1.5;
 	}
 
 	.content {
