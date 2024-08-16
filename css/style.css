@@ -141,6 +141,7 @@ nav h3 {
 	background: var(--white);
 	border-left: 1px solid var(--hover-color);
 	width: 70%;
+	box-shadow: 9px 0px 8px -5px var(--nav-bg-color);
 }
 
 .content > section[id] {
