@@ -14,14 +14,14 @@
 	--light-white: #f5f7fb;
 	--neutral-gray: #353840;
 	--white: #ffffff;
-	--top-offset: 2rem;
+	--top-offset: 5rem;
 	letter-spacing: 0.025px;
 	scroll-behavior: smooth;
 	font-size: 16px;
 	color: var(--font-color-light);
 	font-family: inter;
 	line-height: 1.7;
-	background-color: var(--white);
+	background: var(--light-white);
 	transition: all .3s;
 }
 
@@ -59,26 +59,26 @@ h1 {
 	padding: 1.5rem 0;
 	font-weight: 600;
 	font-size: .825rem;
+	color: var(--font-color-dark);
 }
 
 .logo .logo-wrap {
 	display: inline-block;
 }
 
-.logo .logo-wrap:hover {
-	color: var(--font-color-dark);
-	box-shadow: 5px solid black;
+.logo img {
+	width: 5rem;
 }
 
-.logo img {
-	width: 7rem;
+#downloads {
+	scroll-margin-top: var(--top-offset);
 }
 
 h3 {
 	font-weight: 500;
 }
 
-.navigation {
+nav {
 	position: sticky;
 	top: 0;
 	display: inline-block;
@@ -88,13 +88,13 @@ h3 {
 	background: var(--nav-bg-color);
 }
 
-.navigation ul {
+nav ul {
 	padding: 0;
 	display: block;
-	margin:.5rem 0;
+	margin:1rem 0;
 }
 
-.navigation a, footer a {
+nav a, footer a {
 	text-decoration: none;
 	color: var(--body-color);
 	font-size: .825rem;
@@ -103,28 +103,33 @@ h3 {
 	display: inline-block;
 }
 
-.navigation h2, .navigation > a {
+nav h2, nav > a {
 	margin: 0;
 	padding: 0;
 }
 
-.navigation a h3 {
+nav a h3 {
 	font-size: 1.25rem;
 	margin: 0;
 }
 
-.navigation li {
+nav li {
 	list-style: none;
 	transition: .3s;
 	width: 100%;
 }
 
-.navigation li:hover {
+nav li:hover {
 	background: #c7c8dc;
 	color: var(--font-color-dark)
 }
 
-.navigation h3 {
+nav li.active {
+	background: #363c63;
+	color: var(--white)
+}
+
+nav h3 {
 	padding-left: 1.5rem;
 }
 
@@ -138,9 +143,9 @@ h3 {
 	width: 70%;
 }
 
-.content > div[id] {
-	margin-bottom: 2rem;
-	scroll-margin-top: 1rem;
+.content > section[id] {
+	margin-bottom: var(--top-offset);
+	scroll-margin-top: var(--top-offset);
 	border-bottom: 2px solid var(--font-color-light-color);
 }
 
@@ -162,10 +167,10 @@ h3 {
 }
 
 footer {
-	background: var(--background-color-1);
+	background: var(--white);
 	margin: 0;
 	border-top: 1px solid var(--font-color-dark);
-	padding: 1rem 0;
+	padding: 4rem 0;
 	text-align: center;
 
 }
@@ -254,7 +259,7 @@ footer .social {
 }
 
 @media only screen and (max-width: 900px) {
-	.navigation {
+	nav {
 		display: none;
 	}
 
