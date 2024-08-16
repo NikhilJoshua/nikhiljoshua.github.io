@@ -13,8 +13,8 @@ function removeActiveClass(id) {
 function highlightTopSection() {
     const sections = document.querySelectorAll('section');
 	const threshold = parseFloat(getComputedStyle(document.body).getPropertyValue('--top-offset'));
-	console.log(threshold);
-    let currentlyHighlighted = null;
+
+	let currentlyHighlighted = null;
     function updateHighlight() {
         let topmostSection = null;
 
