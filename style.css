@@ -39,7 +39,7 @@ body{
 	padding:0;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4, h3 > a {
 	color: var(--font-color-dark);
 	font-weight: 600;
 	margin: .5rem 0 1rem 0;
@@ -136,6 +136,11 @@ h3 {
 	margin-bottom: 2rem;
 	scroll-margin-top: 1rem;
 	border-bottom: 2px solid var(--font-color-light-color);
+}
+
+#education p, #education h3, #certifications h3, #certifications p {
+	display: inline-block;
+	margin: .5rem 0;
 }
 
 .designation {
