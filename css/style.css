@@ -156,7 +156,12 @@ nav h3 {
 }
 
 .designation {
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.designation span {
+	display: block;
+	margin: 1rem 0 1rem 0;
 }
 
 .designation p {
