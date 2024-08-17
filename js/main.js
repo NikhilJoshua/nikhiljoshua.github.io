@@ -22,7 +22,7 @@ function highlightTopSection() {
             const rect = section.getBoundingClientRect();
 
 			// Check if the element is within the viewport and its top is >= 0 (visible)
-            if (rect.top >= 0 && rect.top < ( (threshold * 16 ) + 10)) {
+            if ((rect.top >= 0 && rect.top < ( (threshold * 16 ) + 10)) || (rect.bottom >= ((threshold * 16) * 3) && rect.bottom < ( (threshold * 16 ) * 4))) {
                 if (!topmostSection || rect.top < topmostSection.getBoundingClientRect().top) {
                     topmostSection = section;
                 }
