@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	let menu = document.getElementById('menu');
 
 	menuIcon.addEventListener('click', (e) => {
-
 		menu.classList.toggle('mobile-display');
 	} );
 
