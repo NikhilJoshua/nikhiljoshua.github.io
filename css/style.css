@@ -268,9 +268,37 @@ footer .social {
 	color: var(--neutral-gray);
 }
 
+#hamburger-icon {
+	display: none;
+	position: fixed;
+	top: 0;
+	background-color: var(--hover-color);
+	color: var(--font-color-dark);
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5rem;
+	width: 100%;
+	z-index: 2;
+}
+
+.mobile-display {
+	display: none;
+}
+
 @media only screen and (max-width: 900px) {
 	nav {
+		position: fixed;
+		top: 2rem;
+		width: 100%;
 		display: none;
+	}
+
+	.mobile-display {
+		display: block;
+	}
+
+	#hamburger-icon {
+		display: block;
 	}
 
 	h1 {
@@ -283,7 +311,7 @@ footer .social {
 
 	.content {
 		padding: 1rem;
-		padding-top: 3rem;
+		padding-top: 4rem;
 		width: 100%;
 	}
 }
