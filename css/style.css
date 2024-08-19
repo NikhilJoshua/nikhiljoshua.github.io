@@ -304,6 +304,39 @@ footer .social {
 	display: none;
 }
 
+#skills table td:nth-child(even){
+	width: 100%;
+}
+
+#skills table td:nth-child(odd){
+	width: 15%;
+	text-align: right;
+}
+
+#skills td {
+	padding: .25rem;
+	word-break: keep-all;
+	white-space: no-wrap;
+}
+
+.bar-graph {
+	width: 100%;
+	border: 1px solid var(--font-color-dark);
+	display: block;
+	padding: .075rem;
+}
+
+.bar-value {
+	background: linear-gradient(45deg, var(--font-color-light), var(--hover-color));
+	width: 0;
+	display: block;
+	color: var(--light-white);
+	text-align: right;
+	font-size: .825rem;
+	padding: .1rem .5rem;
+	transition: width .8s ease;
+}
+
 @media only screen and (max-width: 900px) {
 	nav {
 		position: fixed;
