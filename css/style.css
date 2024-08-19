@@ -33,6 +33,14 @@ a {
 	color: var(--font-color-light);
 }
 
+#hobbies a::after, #work-experience a::after {
+	font-family: "Font Awesome 6 Free";
+	font-weight: 200;
+	font-size: .825rem;
+	content: " \f08e";
+	display: inline;
+}
+
 body{
 	margin: 0;
 	padding: 0;
