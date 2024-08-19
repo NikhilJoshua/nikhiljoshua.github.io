@@ -29,6 +29,10 @@
 	box-sizing: border-box;
 }
 
+a {
+	color: var(--font-color-light);
+}
+
 body{
 	margin: 0;
 	padding: 0;
