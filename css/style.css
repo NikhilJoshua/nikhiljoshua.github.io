@@ -33,12 +33,13 @@ a {
 	color: var(--font-color-light);
 }
 
-#hobbies a::after, #work-experience a::after {
+#hobbies a::after, #work-experience a::after, footer #githubrepo::after {
 	font-family: "Font Awesome 6 Free";
 	font-weight: 200;
-	font-size: .825rem;
+	font-size: .625rem;
 	content: " \f08e";
 	display: inline;
+	vertical-align:super;
 }
 
 body{
