@@ -250,7 +250,9 @@ footer .social {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	gap: .5rem
+	gap: .5rem;
+	align-items: center;
+  	justify-content: center;
 }
 
 #contact label {
@@ -336,6 +338,22 @@ footer .social {
 	font-size: .825rem;
 	padding: .1rem .5rem;
 	transition: width .8s ease;
+}
+
+.display-picture {
+	height: 12rem;
+	width: 12rem;
+	border-radius: 50%;
+	border: .5rem solid var(--light-white);
+	outline: .125rem solid var(--nav-bg-color);
+	background: url('../assets/display_picture.png');
+	background-size: cover;
+}
+
+.hero {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 900px) {
