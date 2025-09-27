@@ -1,283 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nikhil Joshua</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/58fdb21771.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="/assets/nj-logo-light.svg" />
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Nikhil Joshua</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://kit.fontawesome.com/58fdb21771.js" crossorigin="anonymous"></script>
-	<link rel="icon" type="image/x-icon" href="/assets/nj-logo-light.svg">
+    <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/assets/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="/assets/fontawesome/css/solid.css" rel="stylesheet" />
 
-	<link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
-	<link href="/assets/fontawesome/css/brands.css" rel="stylesheet" />
-	<link href="/assets/fontawesome/css/solid.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <script src="js/main.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/bargraph.js"></script>
+  </head>
 
-	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-	<script src="js/main.js"></script>
-	<script src="js/mobile-nav.js"></script>
-	<script src="js/bargraph.js"></script>
+  <body>
+    <div class="main-container">
+      <div id="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
+      <nav id="menu">
+        <div class="logo">
+          <div class="logo-wrap">
+            <a href="/"
+              ><img
+                src="assets/nj-logo-black.svg"
+                alt=""
+              /><br />nikhiljoshua.com</a
+            >
+          </div>
+        </div>
+        <a href="#downloads"
+          ><h3><i class="fa-solid fa-terminal"></i> <b>RESUME</b></h3></a
+        >
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <section id="introduction">
+          <div class="hero">
+            <div>
+              <div class="display-picture"></div>
+              <div class="social">
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/nikhiljoshua.dev/"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/nikhiljoshua/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/nikhiljoshua" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="details">
+              <h1>Hi! I'm Nikhil Joshua.</h1>
+              <div class="designation">
+                <p>Fullstack Software Developer</p>
+                <i class="fa fa-phone-square"></i> +<a href="tel:+919515876500"
+                  >91 9515876500</a
+                ><br />
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:nikhiljoshua.a@gmail.com"
+                  >nikhiljoshua.a@gmail.com</a
+                >
+                <span>
+                  <i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana,
+                  India.
+                </span>
+              </div>
+            </div>
+          </div>
+          <p>
+            Dynamic Full Stack Software Engineer with over 3 years of extensive
+            experience and solid understanding of Object-Oriented Languages,
+            Java Spring, .NET frameworks, RESTful APIs, MVC Architectures and UI
+            Components. Demonstrated expertise in developing scalable API
+            infrastructures and building aesthetic UI Components. Proven ability
+            to adapt and excel in complex technical environments, now seeking to
+            apply this versatile skill set to achieve impactful results and
+            innovative solutions.
+          </p>
+          <div id="downloads">
+            <a
+              class="button"
+              href="assets/resume.pdf"
+              download="Nikhil's Resume"
+              >Download Resume
+              <i
+                class="fa-solid fa-cloud-arrow-down"
+                style="margin-left: 0.25rem"
+              ></i
+            ></a>
+            <a class="button secondary" href="#contact"
+              >Contact
+              <i class="fa-regular fa-envelope" style="margin-left: 0.25rem"></i
+            ></a>
+          </div>
+        </section>
+        <section id="skills" class="anchor">
+          <h2>Skills</h2>
+          <h3>Programming</h3>
+          <table>
+            <tr>
+              <td>Java/Spring</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="90"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="95"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>API</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="98"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="98"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="85"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Node.js</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="87"></div>
+                </div>
+              </td>
+            </tr>
 
+            <tr>
+              <td>PHP</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="92"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>WordPress</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="95"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>MySQL</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="85"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="80"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Design Patterns</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="85"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Data Structures<br />/Algorithms</td>
+              <td>
+                <div class="bar-graph">
+                  <div class="bar-value" data-value="86"></div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <h3>DevOps</h3>
+          <ul>
+            <li>Docker</li>
+            <li>Webpack, NPM, Yarn</li>
+            <li>Git, GitHub Actions</li>
+            <li>Digital Ocean, RedHat OpenStack</li>
+            <li>LAMP, MERN, Linux OS</li>
+            <li>VS Code, IntellJ IDEA, WebStorm</li>
+            <li>Test Integration/Debugging</li>
+            <li>Agile Methodologies</li>
+            <li>JIRA</li>
+            <li>DNS, Cloudflare</li>
+          </ul>
+          <h3>Design</h3>
+          <ul>
+            <li>Figma</li>
+            <li>Inkscape</li>
+            <li>Photoshop</li>
+            <li>Affinity Suite</li>
+            <li>Blender3D</li>
+          </ul>
+        </section>
+        <section id="work-experience">
+          <div>
+            <h2>Work Experience</h2>
+            <div>
+              <h3>IBM India Pvt. Ltd. - Application Developer - Fullstack; HYD(IND)<span>(Feb 2025 - Present)</span></h3>
+              <ul>
+                <li>
+                  Designed and developed RESTful APIs using Node.js and MySQL to
+                  support IoT systems, enabling reliable device communication
+                  and efficient data handling.
+                </li>
+                <li>
+                  Implemented new features and resolved critical bugs in complex
+                  client-side codebases with minimal documentation and support,
+                  ensuring timely releases and maintaining system stability.
+                </li>
+                <li>
+                  Refactored legacy modules to reduce technical debt, improve
+                  code quality, and enhance maintainability across backend
+                  services.
+                </li>
+                <li>
+                  Integrated IoT messaging systems using Apache Kafka,
+                  facilitating real-time data flow and improving system
+                  reliability and scalability.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>
+                RtCamp Solutions Pvt. Ltd. - Software Engineer; Pune(IND) -
+                Remote <span>(July 2021 - March 2024)</span>
+              </h3>
+              <ul>
+                <li>
+                  Contributed in developing/migrating multiple Nest.js API
+                  infrastructures for clients for efficient and scalable
+                  performance of the API calls with unit and integration tests.
+                </li>
+                <li>
+                  Contributed in developing & Optimizing Backend functionality
+                  for plugins and Frontend UI themes, WP-PWA based web apps, for
+                  clients using PHP, JS, Java, React.
+                </li>
+                <li>
+                  Contributed in developing multiple features for plugins and
+                  themes for clients.
+                </li>
+                <li>
+                  Contributed in L&D project to develop courses on PHPUnit and
+                  Integration tests.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3>Johan Brown Publishing Pvt. Ltd - Internship; HYD(IND)</h3>
+            <ul>
+              <li>
+                Engineered CRUD API for digital library books in Johan Brown
+                Inventory
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>
+              <a href="https://boxbible.com" target="_blank">BoxBible.com</a> -
+              Freelance Developer; HYD(IND)
+            </h3>
+            <ul>
+              <li>
+                Provided a complete websolution for the organization’s
+                information and blogging needs
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>
+              <a href="https://missionglorify.org" target="_blank"
+                >missionglorify.org</a
+              >
+              - Developer; HYD(IND)
+            </h3>
+            <ul>
+              <li>
+                Provided a complete web solution for the organization blogging
+                and e-commerce needs.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="education">
+          <h2>Education</h2>
+          <div>
+            <h3>Master of Technology(CSE)</h3>
+            <p>University College of Engg., Osmania University</p>
+          </div>
+          <div>
+            <h3>Bachelor of Technology(CSE)</h3>
+            <p>Guru Nanak Institute of Technology., JNTUH</p>
+          </div>
+          <div>
+            <h3>10th(SSC) & 12th Grade(CBSE)</h3>
+            <p>St. Peter’s Model School, Hyderabad.</p>
+          </div>
+        </section>
 
-</head>
+        <section id="projects">
+          <h2>Projects</h2>
+          <div>
+            <h4>M.Tech thesis</h4>
+            <p>
+              “Optimizing WordPress Site Performance with Microservices,
+              Decoupled Architecture”
+            </p>
+            <h4>B.Tech thesis</h4>
+            <p>“Car Sales ChatBot using Botpress and Contextual AI”</p>
+          </div>
+        </section>
 
-<body>
-	<div class="main-container">
-		<div id="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
-		<nav id="menu">
-				<div class="logo">
-					<div class="logo-wrap"><a href="/"><img src="assets/nj-logo-black.svg" alt=""><br>nikhiljoshua.com</a>
-					</div>
-				</div>
-				<a href="#downloads"><h3>
-					<i class="fa-solid fa-terminal"></i> <b>RESUME</b>
-				</h3></a>
-				<ul>
-					<li><a href="#introduction">Introduction</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#work-experience">Work Experience</a></li>
-					<li><a href="#education">Education</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#certifications">Certifications</a></li>
-					<li><a href="#hobbies">Hobbies</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-		</nav><div class="content">
-			<section id="introduction">
-				<div class="hero">
-					<div>
-						<div class="display-picture"></div>
-						<div class="social">
-							<ul>
-								<li><a href="https://www.instagram.com/nikhiljoshua.dev/" target="_blank"><i
-											class="fa-brands fa-instagram"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/nikhiljoshua/" target="_blank"><i
-											class="fa-brands fa-linkedin"></i></a></li>
-								<li><a href="https://github.com/nikhiljoshua" target="_blank"><i
-											class="fa-brands fa-github"></i></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="details">
-						<h1>Hi! I'm Nikhil Joshua.</h1>
-						<div class="designation">
-							<p>Fullstack Software Developer</p>
-							<i class="fa fa-phone-square"></i> +<a href="tel:+919515876500">91 9515876500</a><br>
-							<i class="fa-regular fa-envelope"></i> <a href="mailto:nikhiljoshua.a@gmail.com">nikhiljoshua.a@gmail.com</a>
-							<span>
-								<i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana, India.
-							</span>
-
-						</div>
-					</div>
-				</div>
-				<p>
-					Dynamic Full Stack Software Engineer with over 3 years of extensive experience and solid understanding of Object-Oriented Languages, Java Spring, .NET frameworks, RESTful APIs, MVC Architectures and UI Components. Demonstrated expertise in developing scalable API infrastructures and building aesthetic UI Components. Proven ability to adapt and excel in complex technical environments, now seeking to apply this versatile skill set to achieve impactful results and innovative solutions.				</p>
-				<div id="downloads">
-				<a class="button" href="assets/resume.pdf" download="Nikhil's Resume">Download Resume <i
-						class="fa-solid fa-cloud-arrow-down" style="margin-left: .25rem;"></i></a>
-				<a class="button secondary" href="#contact">Contact <i class="fa-regular fa-envelope"
-						style="margin-left: .25rem;"></i></a>
-					</div>
-			</section>
-			<section id="skills" class="anchor">
-				<h2>Skills</h2>
-				<h3>Programming</h3>
-				<table>
-					<tr>
-						<td>Java/Spring</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="90"></div></div></td>
-					</tr>
-					<tr>
-						<td>JavaScript</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="95"></div></div></td>
-					</tr>
-					<tr>
-						<td>API</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="98"></div></div></td>
-					</tr>
-					<tr>
-						<td>HTML/CSS</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="98"></div></div></td>
-					</tr>
-					<tr>
-						<td>React</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="85"></div></div></td>
-					</tr>
-					<tr>
-						<td>Node.js</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="87"></div></div></td>
-					</tr>
-
-					<tr>
-						<td>PHP</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="92"></div></div></td>
-					</tr>
-					<tr>
-						<td>WordPress</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="95"></div></div></td>
-					</tr>
-					<tr>
-						<td>MySQL</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="85"></div></div></td>
-					</tr>
-					<tr>
-						<td>Python</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="80"></div></div></td>
-					</tr>
-					<tr>
-						<td>Design Patterns</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="85"></div></div></td>
-					</tr>
-					<tr>
-						<td>Data Structures<br/>/Algorithms</td>
-						<td><div class="bar-graph"><div class="bar-value" data-value="86"></div></div></td>
-					</tr>
-				</table>
-				<h3>DevOps</h3>
-				<ul>
-					<li>Docker</li>
-					<li>Webpack, NPM, Yarn</li>
-					<li>Git, GitHub Actions</li>
-					<li>Digital Ocean, RedHat OpenStack</li>
-					<li>LAMP, MERN, Linux OS</li>
-					<li>VS Code, IntellJ IDEA, WebStorm</li>
-					<li>Test Integration/Debugging</li>
-					<li>Agile Methodologies</li>
-					<li>JIRA</li>
-					<li>DNS, Cloudflare</li>
-				</ul>
-				<h3>Design</h3>
-				<ul>
-					<li>Figma</li>
-					<li>Inkscape</li>
-					<li>Photoshop</li>
-					<li>Affinity Suite</li>
-					<li>Blender3D</li>
-				</ul>
-			</section>
-			<section id="work-experience">
-				<div>
-					<h2>Work Experience</h2>
-					<h3>RtCamp Solutions Pvt. Ltd. - Software Engineer; Pune(IND) - Remote</h3>
-					<ul>
-						<li>Contributed in developing/migrating multiple Nest.js API infrastructures for clients for
-							efficient and scalable performance of the API calls with unit and integration tests.</li>
-						<li>Contributed in developing & Optimizing Backend functionality for plugins and Frontend UI themes, WP-PWA based web apps, for clients using PHP, JS, Java, React.</li>
-						<li>Contributed in developing multiple features for plugins and themes for clients.</li>
-						<li>Contributed in L&D project to develop courses on PHPUnit and Integration tests.</li>
-					</ul>
-				</div>
-				<div>
-					<h3>Johan Brown Publishing Pvt. Ltd - Internship; HYD(IND)</h3>
-					<ul>
-						<li>Engineered CRUD API for digital library books in Johan Brown Inventory</li>
-					</ul>
-				</div>
-				<div>
-					<h3><a href="https://boxbible.com" target="_blank">BoxBible.com</a> - Freelance Developer; HYD(IND)</h3>
-					<ul>
-						<li>Provided a complete websolution for the organization’s information and blogging needs
-						</li>
-					</ul>
-				</div>
-				<div>
-					<h3><a href="https://missionglorify.org" target="_blank">missionglorify.org</a> - Developer; HYD(IND)</h3>
-					<ul>
-						<li>Provided a complete web solution for the organization blogging and e-commerce needs.
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section id="education">
-				<h2>Education</h2>
-				<div>
-					<h3>Master of Technology(CSE)</h3>
-					<p>University College of Engg., Osmania University</p>
-				</div>
-				<div>
-					<h3>Bachelor of Technology(CSE)</h3>
-					<p>Guru Nanak Institute of Technology., JNTUH</p>
-				</div>
-				<div>
-					<h3>10th(SSC) & 12th Grade(CBSE)</h3>
-					<p>St. Peter’s Model School, Hyderabad.</p>
-				</div>
-			</section>
-
-			<section id="projects">
-				<h2>Projects</h2>
-				<div>
-					<h4>M.Tech thesis</h4>
-					<p>“Optimizing WordPress Site Performance with Microservices, Decoupled Architecture”</p>
-					<h4>B.Tech thesis</h4>
-					<p>“Car Sales ChatBot using Botpress and Contextual AI”
-					</p>
-				</div>
-			</section>
-
-			<section id="certifications">
-				<h2>Certifications & Achievements</h2>
-				<div>
-					<h3>GATE 2019(CSE)</h3>
-					<p>All India Rank - 11,077</p>
-				</div>
-				<div>
-					<h3>RedHate Cloud Infrastructure Training 2019</h3>
-				</div>
-			</section>
-			<section id="hobbies">
-				<h2>Hobbies</h2>
-				<ul>
-					<li>Playing Guitar</li>
-					<li><a href="https://youtube.com/nikhiljoshua">Composing Music</a></li>
-					<li>Graphic Design</li>
-					<li>Experimenting on Raspberry Pi</li>
-					<li>Reading Books</li>
-				</ul>
-			</section>
-			<section id="contact">
-				<h2>Contact</h2>
-				<form action="https://formspree.io/f/mjkboakn" method="POST">
-					<label>
-						Name<br>
-						<input placeholder="Your Name" type="name" name="name" required>
-					</label>
-					<label>
-						Email<br>
-				 		<input placeholder="Your Email" type="email" name="email" required>
-					</label>
-					<label>
-						Subject<br>
-				 		<input placeholder="Topic" type="input" name="subject" required>
-					</label>
-					<label>
-						Message<br/>
-						<textarea placeholder="Type your message here" name="message" required></textarea>
-					</label>
-					<!-- your other form fields go here -->
-					<button class="button" type="submit">Send</button>
-				</form>
-			</section>
-		</div>
-
-	</div>
-	<footer>
-		<p>FOLLOW ME ON</p>
-		<div class="social">
-			<ul>
-				<li><a href="https://www.instagram.com/nikhiljoshua.dev/" target="_blank"><i
-							class="fa-brands fa-instagram"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/nikhiljoshua/" target="_blank"><i
-							class="fa-brands fa-linkedin"></i></a></li>
-				<li><a href="https://github.com/nikhiljoshua" target="_blank"><i class="fa-brands fa-github"></i></a>
-				</li>
-			</ul>
-		</div>
-		<p>Copyright © 2024 Nikhil Joshua</p>
-		<a id="githubrepo" href="https://github.com/NikhilJoshua/nikhiljoshua.github.io" target="_blank">resume powered by
-			<b><u>nikhiljoshua.github.io</u></b></a>
-	</footer>
-</body>
-
+        <section id="certifications">
+          <h2>Certifications & Achievements</h2>
+          <div>
+            <h3>GATE 2019(CSE)</h3>
+            <p>All India Rank - 11,077</p>
+          </div>
+          <div>
+            <h3>RedHate Cloud Infrastructure Training 2019</h3>
+          </div>
+        </section>
+        <section id="hobbies">
+          <h2>Hobbies</h2>
+          <ul>
+            <li>Playing Guitar</li>
+            <li>
+              <a href="https://youtube.com/nikhiljoshua">Composing Music</a>
+            </li>
+            <li>Graphic Design</li>
+            <li>Experimenting on Raspberry Pi</li>
+            <li>Reading Books</li>
+          </ul>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <form action="https://formspree.io/f/mjkboakn" method="POST">
+            <label>
+              Name<br />
+              <input placeholder="Your Name" type="name" name="name" required />
+            </label>
+            <label>
+              Email<br />
+              <input
+                placeholder="Your Email"
+                type="email"
+                name="email"
+                required
+              />
+            </label>
+            <label>
+              Subject<br />
+              <input placeholder="Topic" type="input" name="subject" required />
+            </label>
+            <label>
+              Message<br />
+              <textarea
+                placeholder="Type your message here"
+                name="message"
+                required
+              ></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button class="button" type="submit">Send</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <p>FOLLOW ME ON</p>
+      <div class="social">
+        <ul>
+          <li>
+            <a
+              href="https://www.instagram.com/nikhiljoshua.dev/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nikhiljoshua/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/nikhiljoshua" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p>Copyright © 2024 Nikhil Joshua</p>
+      <a
+        id="githubrepo"
+        href="https://github.com/NikhilJoshua/nikhiljoshua.github.io"
+        target="_blank"
+        >resume powered by <b><u>nikhiljoshua.github.io</u></b></a
+      >
+    </footer>
+  </body>
 </html>

@@ -356,6 +356,13 @@ footer .social {
 	flex-wrap: wrap;
 }
 
+#work-experience span {
+	font-size: .825rem;
+	color: var(--font-color-light);
+	font-weight: 400;
+	font-style: italic;
+}
+
 @media only screen and (max-width: 900px) {
 	nav {
 		position: fixed;
